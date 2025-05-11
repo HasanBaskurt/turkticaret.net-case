@@ -34,15 +34,15 @@ final class AppThemeColors {
   static const Color scrim = Color(0xFF000000);
 
   // For Dark Color Scheme
-  static const Color darkPrimary = Color(0xFF6750A4);
-  static const Color darkOnPrimary = Color(0xFFFFFFFF);
-  static const Color darkPrimaryContainer = Color(0xFFE7E0EC);
-  static const Color darkOnPrimaryContainer = Color(0xFF1C1B1F);
-  static const Color darkSecondary = Color(0xFFB3261E);
-  static const Color darkOnSecondary = Color(0xFF81C955);
-  static const Color darkSecondaryContainer = Color(0xFF4A4458);
-  static const Color darkOnSecondaryContainer = Color(0xFFE8DEF8);
-  static const Color darkTertiary = Color(0xFFEFB8C8);
+  static const Color darkPrimary = Color(0xFF4D88FF);
+  static const Color darkOnPrimary = Color(0xFF121212);
+  static const Color darkPrimaryContainer = Color(0xFFAAAAAA);
+  static const Color darkOnPrimaryContainer = Color(0xFFEEEEEE);
+  static const Color darkSecondary = Color(0xFF1A1A1A);
+  static const Color darkOnSecondary = Color(0xFF222222);
+  static const Color darkSecondaryContainer = Color(0xFFDDE6FF);
+  static const Color darkOnSecondaryContainer = Color(0xFF00FFAA);
+  static const Color darkTertiary = Color(0xFFFF6B6B);
   static const Color darkOnTertiary = Color(0xFF492532);
   static const Color darkTertiaryContainer = Color(0xFF633B48);
   static const Color darkOnTertiaryContainer = Color(0xFFFFD8E4);
