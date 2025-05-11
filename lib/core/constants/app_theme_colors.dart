@@ -7,8 +7,8 @@ final class AppThemeColors {
   static const Color primaryContainer = Color(0xFF666666); // gray2
   static const Color onPrimaryContainer = Color(0xFF333333); // gray3
   static const Color secondary = Color(0xFFFFFFFF); // white1
-  static const Color onSecondary = Color(0xFF81C955);
-  static const Color secondaryContainer = Color(0xFFE8DEF8);
+  static const Color onSecondary = Color(0xFFFAFAFA); // white2
+  static const Color secondaryContainer = Color(0xFF00091F); // black1
   static const Color onSecondaryContainer = Color(0xFF1D192B);
   static const Color tertiary = Color(0xFF7D5260);
   static const Color onTertiary = Color(0xFFFFFFFF);

@@ -27,7 +27,7 @@ class _SplashViewState extends State<SplashView> {
     return Scaffold(
       body: Center(
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: AppSize.widht(width: 40)),
+          padding: EdgeInsets.symmetric(horizontal: AppSize.width(width: 40)),
           child: Image.asset(AppImages.APP_LOGO),
         ),
       ),

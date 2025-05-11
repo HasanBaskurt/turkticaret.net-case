@@ -8,12 +8,12 @@ class AppColors {
   late final ColorScheme _themeColor = Theme.of(context).colorScheme;
 
   late Color blue1 = _themeColor.primary;
-  late Color grey1 = _themeColor.onPrimary;
-  late Color grey2 = _themeColor.primaryContainer;
-  late Color grey3 = _themeColor.onPrimaryContainer;
+  late Color gray1 = _themeColor.onPrimary;
+  late Color gray2 = _themeColor.primaryContainer;
+  late Color gray3 = _themeColor.onPrimaryContainer;
   late Color white1 = _themeColor.secondary;
-  late Color onSecondary = _themeColor.onSecondary;
-  late Color secondaryContainer = _themeColor.secondaryContainer;
+  late Color white2 = _themeColor.onSecondary;
+  late Color black1 = _themeColor.secondaryContainer;
   late Color onSecondaryContainer = _themeColor.onSecondaryContainer;
   late Color tertiary = _themeColor.tertiary;
   late Color onTertiary = _themeColor.onTertiary;

@@ -5,7 +5,7 @@ class AppSize {
     return height.h;
   }
 
-  static double widht({required double width}) {
+  static double width({required double width}) {
     return width.w;
   }
 

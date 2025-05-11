@@ -36,6 +36,9 @@ dependencies:
   # App Logo
   flutter_launcher_icons: ^0.14.3
 
+  # SVG Support
+  flutter_svg: ^2.1.0
+
 
 
 dev_dependencies:
