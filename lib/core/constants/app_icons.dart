@@ -14,4 +14,22 @@ class AppIcons {
   static final AppIconData SETTING = AppIconData(
     path: "$_ICONS_PATH/setting.svg",
   );
+
+  static final AppIconData UPLOAD = AppIconData(
+    path: "$_ICONS_PATH/upload.svg",
+  );
+  static final AppIconData DOWNLOAD = AppIconData(
+    path: "$_ICONS_PATH/download.svg",
+  );
+
+  // Flags
+  static final AppIconData ITALY_FLAG = AppIconData(
+    path: "$_ICONS_PATH/italy_flag.svg",
+  );
+  static final AppIconData GERMANY_FLAG = AppIconData(
+    path: "$_ICONS_PATH/germany_flag.svg",
+  );
+  static final AppIconData NETHERLANDS_FLAG = AppIconData(
+    path: "$_ICONS_PATH/netherlands_flag.svg",
+  );
 }

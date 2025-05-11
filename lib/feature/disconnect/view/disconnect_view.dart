@@ -17,7 +17,7 @@ class DisconnectView extends GetView<CountriesController> {
     );
   }
 
-  Center _buildBody({required DisconnectViewTextStyles textStyle}) {
+  Widget _buildBody({required DisconnectViewTextStyles textStyle}) {
     return Center(
       child: Text(AppLocaleKeys.DISCONNECT.tr, style: textStyle.titleTextStyle),
     );

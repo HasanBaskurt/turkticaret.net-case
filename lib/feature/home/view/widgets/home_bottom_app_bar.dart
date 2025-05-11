@@ -89,26 +89,29 @@ Widget _bottomNavigationItem({
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          AppIcon.icon(
-            icon,
-            height: AppSize.radius(radius: 24),
-            width: AppSize.radius(radius: 24),
-            color:
-                controller.currentPageIndex.value == pageIndex
-                    ? appColors.blue1
-                    : appColors.black1,
+          Expanded(
+            child: AppIcon.icon(
+              icon,
+              height: AppSize.radius(radius: 24),
+              width: AppSize.radius(radius: 24),
+              color:
+                  controller.currentPageIndex.value == pageIndex
+                      ? appColors.blue1
+                      : appColors.black1,
+            ),
           ),
-          SizedBox(height: AppSize.height(height: 6)),
-          AutoSizeText(
-            overflow: TextOverflow.ellipsis,
-            minFontSize: 10,
-            maxFontSize: 14,
-            maxLines: 1,
-            label,
-            style:
-                controller.currentPageIndex.value == pageIndex
-                    ? textStyles.activeNaviagationBarTextStyle
-                    : textStyles.passiveNaviagationBarTextStyle,
+          Expanded(
+            child: AutoSizeText(
+              minFontSize: 10,
+              maxFontSize: 14,
+              overflow: TextOverflow.ellipsis,
+              maxLines: 1,
+              label,
+              style:
+                  controller.currentPageIndex.value == pageIndex
+                      ? textStyles.activeNaviagationBarTextStyle
+                      : textStyles.passiveNaviagationBarTextStyle,
+            ),
           ),
         ],
       );

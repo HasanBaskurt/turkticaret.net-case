@@ -21,4 +21,39 @@ class CountriesViewTextStyles {
     fontWeight: AppTextFontWeight.SEMI_BOLD,
     color: appColors.gray2,
   );
+
+  late TextStyle connectionTimeTitleTextStyle = GoogleFonts.rubik(
+    height: 0,
+    fontSize: AppSize.fontSize(fontSize: 12),
+    fontWeight: AppTextFontWeight.REGULAR,
+    color: appColors.gray3,
+  );
+
+  late TextStyle connectionTimeValueTextStyle = GoogleFonts.rubik(
+    height: 0,
+    fontSize: AppSize.fontSize(fontSize: 24),
+    fontWeight: AppTextFontWeight.BOLD,
+    color: appColors.gray3,
+  );
+
+  late TextStyle freeLocalizationsTitleTextStyle = GoogleFonts.rubik(
+    height: 0,
+    fontSize: AppSize.fontSize(fontSize: 12),
+    fontWeight: AppTextFontWeight.MEDIUM,
+    color: appColors.gray2,
+  );
+
+  late TextStyle cardTitleTextStyle = GoogleFonts.rubik(
+    height: 0,
+    fontSize: AppSize.fontSize(fontSize: 14),
+    fontWeight: AppTextFontWeight.MEDIUM,
+    color: appColors.gray3,
+  );
+
+  late TextStyle cardSubtitleTextStyle = GoogleFonts.rubik(
+    height: 0,
+    fontSize: AppSize.fontSize(fontSize: 10),
+    fontWeight: AppTextFontWeight.MEDIUM,
+    color: appColors.gray2,
+  );
 }
