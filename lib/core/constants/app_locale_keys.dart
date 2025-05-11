@@ -19,4 +19,5 @@ class AppLocaleKeys {
   static const UPLOAD = "UPLOAD";
   static const FREE_LOCATIONS = "FREE_LOCATIONS";
   static const LOCATIONS = "LOCATIONS";
+  static const STEALTH = "STEALTH";
 }

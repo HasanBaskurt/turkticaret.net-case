@@ -82,23 +82,29 @@ class FreeLocationsArea extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Expanded(
-                  child: AutoSizeText(
-                    overflow: TextOverflow.ellipsis,
-                    minFontSize: 10,
-                    maxFontSize: 14,
-                    maxLines: 1,
-                    "Turkey",
-                    style: textStyle.cardTitleTextStyle,
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: AutoSizeText(
+                      overflow: TextOverflow.ellipsis,
+                      minFontSize: 10,
+                      maxFontSize: 14,
+                      maxLines: 1,
+                      "Turkey",
+                      style: textStyle.cardTitleTextStyle,
+                    ),
                   ),
                 ),
                 Expanded(
-                  child: AutoSizeText(
-                    overflow: TextOverflow.ellipsis,
-                    minFontSize: 10,
-                    maxFontSize: 14,
-                    maxLines: 1,
-                    "4 ${AppLocaleKeys.LOCATIONS.tr}",
-                    style: textStyle.cardSubtitleTextStyle,
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: AutoSizeText(
+                      overflow: TextOverflow.ellipsis,
+                      minFontSize: 10,
+                      maxFontSize: 14,
+                      maxLines: 1,
+                      "4 ${AppLocaleKeys.LOCATIONS.tr}",
+                      style: textStyle.cardSubtitleTextStyle,
+                    ),
                   ),
                 ),
               ],
@@ -118,7 +124,7 @@ class FreeLocationsArea extends StatelessWidget {
               size: AppSize.radius(radius: 20),
             ),
           ),
-      
+
           SizedBox(width: AppSize.width(width: 8)),
           Container(
             height: AppSize.height(height: 28),

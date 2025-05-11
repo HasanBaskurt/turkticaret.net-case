@@ -20,5 +20,6 @@ class EN {
     "UPLOAD": "Upload",
     "FREE_LOCATIONS": "Free Locations",
     "LOCATIONS": "Locations",
+    "STEALTH": "Stealth",
   };
 }

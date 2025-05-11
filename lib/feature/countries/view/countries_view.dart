@@ -4,6 +4,7 @@ import 'package:turkticaret_net_case/core/constants/app_colors.dart';
 import 'package:turkticaret_net_case/core/constants/app_size.dart';
 import 'package:turkticaret_net_case/feature/countries/controller/countries_controller.dart';
 import 'package:turkticaret_net_case/feature/countries/view/helper/countries_text_styles.dart';
+import 'package:turkticaret_net_case/feature/countries/view/widgets/connected_country_status_area.dart';
 import 'package:turkticaret_net_case/feature/countries/view/widgets/connection_time_area.dart';
 import 'package:turkticaret_net_case/feature/countries/view/widgets/free_locations_area.dart';
 
@@ -31,10 +32,21 @@ class CountriesView extends GetView<CountriesController> {
       ),
       child: Column(
         children: [
-          Expanded(flex: 4, child: Column(children: [ConnectionTimeArea()])),
-          SizedBox(height: AppSize.height(height: 24)),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: AppSize.width(width: 24)),
+            child: Column(
+              children: [
+                ConnectionTimeArea(appColors: appColors, textStyle: textStyle),
+                SizedBox(height: AppSize.height(height: 24)),
+                ConnectedCountryStatusArea(
+                  appColors: appColors,
+                  textStyle: textStyle,
+                ),
+              ],
+            ),
+          ),
+          SizedBox(height: AppSize.height(height: 32)),
           Expanded(
-            flex: 5,
             child: FreeLocationsArea(
               appColors: appColors,
               textStyle: textStyle,

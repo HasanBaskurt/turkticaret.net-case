@@ -21,5 +21,6 @@ class TR {
     "UPLOAD": "Yükleme",
     "FREE_LOCATIONS": "Ücretsiz Konumlar",
     "LOCATIONS": "Konumlar",
+    "STEALTH": "Gizlilik",
   };
 }

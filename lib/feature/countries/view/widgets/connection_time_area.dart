@@ -7,14 +7,17 @@ import 'package:turkticaret_net_case/core/constants/app_size.dart';
 import 'package:turkticaret_net_case/feature/countries/view/helper/countries_text_styles.dart';
 
 class ConnectionTimeArea extends StatelessWidget {
-  const ConnectionTimeArea({super.key});
+  const ConnectionTimeArea({
+    super.key,
+    required this.appColors,
+    required this.textStyle,
+  });
+
+  final AppColors appColors;
+  final CountriesViewTextStyles textStyle;
 
   @override
   Widget build(BuildContext context) {
-    AppColors appColors = AppColors(context: context);
-    CountriesViewTextStyles textStyle = CountriesViewTextStyles(
-      appColors: appColors,
-    );
     return Column(
       children: [
         AutoSizeText(

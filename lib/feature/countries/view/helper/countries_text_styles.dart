@@ -56,4 +56,30 @@ class CountriesViewTextStyles {
     fontWeight: AppTextFontWeight.MEDIUM,
     color: appColors.gray2,
   );
+
+  late TextStyle stealthTitleTextStyle = GoogleFonts.rubik(
+    height: 0,
+    fontSize: AppSize.fontSize(fontSize: 10),
+    fontWeight: AppTextFontWeight.MEDIUM,
+    color: appColors.gray2,
+  );
+  late TextStyle stealthValueTextStyle = GoogleFonts.rubik(
+    height: 0,
+    fontSize: AppSize.fontSize(fontSize: 11),
+    fontWeight: AppTextFontWeight.MEDIUM,
+    color: appColors.gray3,
+  );
+
+  late TextStyle statusTitleTextStyle = GoogleFonts.rubik(
+    height: 0,
+    fontSize: AppSize.fontSize(fontSize: 10),
+    fontWeight: AppTextFontWeight.MEDIUM,
+    color: appColors.gray2,
+  );
+  late TextStyle statusValueTextStyle = GoogleFonts.rubik(
+    height: 0,
+    fontSize: AppSize.fontSize(fontSize: 14),
+    fontWeight: AppTextFontWeight.MEDIUM,
+    color: appColors.gray3,
+  );
 }
