@@ -16,7 +16,7 @@ class AppColors {
   late Color black1 = _themeColor.secondaryContainer;
   late Color green1 = _themeColor.onSecondaryContainer;
   late Color red1 = _themeColor.tertiary;
-  late Color onTertiary = _themeColor.onTertiary;
+  late Color blue2 = _themeColor.onTertiary;
   late Color tertiaryContainer = _themeColor.tertiaryContainer;
   late Color onTertiaryContainer = _themeColor.onTertiaryContainer;
   late Color error = _themeColor.error;

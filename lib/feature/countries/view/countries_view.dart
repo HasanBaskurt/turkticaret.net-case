@@ -6,6 +6,7 @@ import 'package:turkticaret_net_case/feature/countries/controller/countries_cont
 import 'package:turkticaret_net_case/feature/countries/view/helper/countries_text_styles.dart';
 import 'package:turkticaret_net_case/feature/countries/view/widgets/connected_country_status_area.dart';
 import 'package:turkticaret_net_case/feature/countries/view/widgets/connection_time_area.dart';
+import 'package:turkticaret_net_case/feature/countries/view/widgets/countries_app_bar.dart';
 import 'package:turkticaret_net_case/feature/countries/view/widgets/free_locations_area.dart';
 
 class CountriesView extends GetView<CountriesController> {
@@ -16,6 +17,7 @@ class CountriesView extends GetView<CountriesController> {
     final textStyle = CountriesViewTextStyles(appColors: appColors);
     return Scaffold(
       backgroundColor: appColors.gray1,
+      appBar: CountriesAppBar(),
       body: _buildBody(textStyle: textStyle, appColors: appColors),
     );
   }

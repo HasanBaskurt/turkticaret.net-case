@@ -11,7 +11,7 @@ final class AppThemeColors {
   static const Color secondaryContainer = Color(0xFF00091F); // black1
   static const Color onSecondaryContainer = Color(0xFF00D589); // green1
   static const Color tertiary = Color(0xFFE63946); // red1
-  static const Color onTertiary = Color(0xFFFFFFFF);
+  static const Color onTertiary = Color(0xFF3B74FF);  // blue2
   static const Color tertiaryContainer = Color(0xFFFFD8E4);
   static const Color onTertiaryContainer = Color(0xFF31111D);
   static const Color error = Color(0xFFB3261E);

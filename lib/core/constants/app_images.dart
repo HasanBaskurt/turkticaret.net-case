@@ -9,4 +9,8 @@ class AppImages {
   static final String GERMANY_FLAG = "$_IMAGE_PATH/germany_flag.svg";
 
   static final String NETHERLANDS_FLAG = "$_IMAGE_PATH/netherlands_flag.svg";
+  static final String BACKGROUND_IMAGE_RIGHT =
+      "$_IMAGE_PATH/background_image_right.png";
+  static final String BACKGROUND_IMAGE_LEFT =
+      "$_IMAGE_PATH/background_image_left.png";
 }

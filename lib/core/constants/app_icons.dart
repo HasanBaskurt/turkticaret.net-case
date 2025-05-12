@@ -23,4 +23,16 @@ class AppIcons {
   );
 
 
+    static final AppIconData CATEGORY = AppIconData(
+    path: "$_ICONS_PATH/category.svg",
+  );
+
+      static final AppIconData CROWN = AppIconData(
+    path: "$_ICONS_PATH/crown.svg",
+  );
+
+      static final AppIconData SEARCH = AppIconData(
+    path: "$_ICONS_PATH/search.svg",
+  );
+
 }

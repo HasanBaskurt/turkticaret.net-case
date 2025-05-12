@@ -10,10 +10,24 @@ class CountriesViewTextStyles {
 
   late TextStyle titleTextStyle = GoogleFonts.rubik(
     height: 0,
-    fontSize: AppSize.fontSize(fontSize: 20),
+    fontSize: AppSize.fontSize(fontSize: 16),
     fontWeight: AppTextFontWeight.SEMI_BOLD,
+    color: appColors.white1,
+  );
+  late TextStyle searchHintTextStyle = GoogleFonts.rubik(
+    height: 0,
+    fontSize:14,
+    fontWeight: AppTextFontWeight.REGULAR,
     color: appColors.gray2,
   );
+
+    late TextStyle searchLabelTextStyle = GoogleFonts.rubik(
+    height: 0,
+    fontSize: 14,
+    fontWeight: AppTextFontWeight.REGULAR,
+    color: appColors.gray3,
+  );
+
 
   late TextStyle subtitleTextStyle = GoogleFonts.rubik(
     height: 0,
