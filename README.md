@@ -1,16 +1,97 @@
-# turkticaret_net_case
+## Kurulum
 
-A new Flutter project.
+git clone https://github.com/HasanBaskurt/turkticaret.net-case.git
 
-## Getting Started
+cd turkticaret.net-case
 
-This project is a starting point for a Flutter application.
+## Gerekli Paketleri Yükleyin
 
-A few resources to get you started if this is your first Flutter project:
+flutter pub get
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Uygulamayı Başlatın
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+flutter run
+
+## Uygulama Görüntüsü
+![Screenshot_1747085733](https://github.com/user-attachments/assets/1772046c-6785-412d-8cb2-503a313d890e)
+
+
+
+# Proje yapısı
+
+lib/
+
+├── core/
+
+│   ├── constants
+
+│   └── localication
+
+│   └── storage
+
+├── feature/
+
+│   ├── home
+
+          └── bindings
+          
+          └── controller
+          
+          └── model
+          
+          └── view
+          
+│   └── countries
+
+│   └── ...
+
+├── global/
+
+│   └── bindings,
+
+│   └── controllers
+
+│   └── mock_data
+
+│   └── models
+
+│   └── widgets
+
+├── utils/
+
+│   └── helper
+
+│   └── init
+
+│   └── routes
+
+│   └── theme
+
+├── main.dart
+
+
+
+## Kullanılan Paketler
+ ### Localization
+  intl: ^0.19.0
+  
+ ### Screen Size Control
+  flutter_screenutil: ^5.9.3
+
+   ### State Management & Navigation & Localization
+  get: ^4.7.2
+
+   ### Storage
+  get_storage: ^2.1.1  
+  
+ ### Auto Size Text
+  auto_size_text: ^3.0.0
+
+  ### Google Fonts
+  google_fonts: ^6.2.1
+
+   ### App Logo
+  flutter_launcher_icons: ^0.14.3
+
+  ### SVG Support
+  flutter_svg: ^2.1.0
