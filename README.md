@@ -1,23 +1,15 @@
-## Kurulum
+## Uygulama genel bakış
 
-git clone https://github.com/HasanBaskurt/turkticaret.net-case.git
+* State management, localization ve navigation işlemleri Get ile gerçekleştirdi.
 
-cd turkticaret.net-case
+* Storage işlemleri Get_storage ile gerçekleştirdi.
 
-## Gerekli Paketleri Yükleyin
+* Uygulamada dil ve dark/light mode desteği mevcut.
 
-flutter pub get
-
-## Uygulamayı Başlatın
-
-flutter run
-
-## Uygulama Görüntüsü
-![Screenshot_1747085733](https://github.com/user-attachments/assets/1772046c-6785-412d-8cb2-503a313d890e)
+* MVC yapısı ile oluşturuldu.
 
 
-
-# Proje yapısı
+## Proje yapısı
 
 lib/
 
@@ -25,7 +17,7 @@ lib/
 
 │   ├── constants
 
-│   └── localication
+│   └── localization
 
 │   └── storage
 
@@ -68,6 +60,26 @@ lib/
 │   └── theme
 
 ├── main.dart
+
+
+
+## Kurulum
+
+git clone https://github.com/HasanBaskurt/turkticaret.net-case.git
+
+cd turkticaret.net-case
+
+## Gerekli Paketleri Yükleyin
+
+flutter pub get
+
+## Uygulamayı Başlatın
+
+flutter run
+
+## Uygulama Görüntüsü
+![Screenshot_1747085733](https://github.com/user-attachments/assets/1772046c-6785-412d-8cb2-503a313d890e)
+
 
 
 
