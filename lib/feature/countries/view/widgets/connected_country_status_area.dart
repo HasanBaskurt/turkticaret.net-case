@@ -8,12 +8,13 @@ import 'package:turkticaret_net_case/core/constants/app_colors.dart';
 import 'package:turkticaret_net_case/core/constants/app_icons.dart';
 import 'package:turkticaret_net_case/core/constants/app_locale_keys.dart';
 import 'package:turkticaret_net_case/core/constants/app_size.dart';
+import 'package:turkticaret_net_case/feature/countries/controller/countries_controller.dart';
 import 'package:turkticaret_net_case/feature/countries/view/helper/countries_text_styles.dart';
 import 'package:turkticaret_net_case/global/models/app_icon_data.dart';
 import 'package:turkticaret_net_case/utils/helper/app_icon.dart';
 
 class ConnectedCountryStatusArea extends StatelessWidget {
-  const ConnectedCountryStatusArea({
+  ConnectedCountryStatusArea({
     super.key,
     required this.appColors,
     required this.textStyle,
@@ -21,6 +22,10 @@ class ConnectedCountryStatusArea extends StatelessWidget {
 
   final AppColors appColors;
   final CountriesViewTextStyles textStyle;
+
+  final CountriesController countriesController = Get.put(
+    CountriesController(),
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +39,9 @@ class ConnectedCountryStatusArea extends StatelessWidget {
             Expanded(
               child: _statusCard(
                 title: AppLocaleKeys.DOWNLOAD.tr,
-                value: "527",
+                value:
+                    countriesController.connection.value.downloadSpeed
+                        .toString(),
                 icon: AppIcons.DOWNLOAD,
                 color: appColors.green1,
               ),
@@ -43,7 +50,8 @@ class ConnectedCountryStatusArea extends StatelessWidget {
             Expanded(
               child: _statusCard(
                 title: AppLocaleKeys.UPLOAD.tr,
-                value: "48",
+                value:
+                    countriesController.connection.value.uploadSpeed.toString(),
                 icon: AppIcons.UPLOAD,
                 color: appColors.red1,
               ),
@@ -73,7 +81,12 @@ class ConnectedCountryStatusArea extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(AppSize.radius(radius: 6.9)),
             ),
-            child: AppIcon.icon(AppIcons.NETHERLANDS_FLAG),
+            child: AppIcon.icon(
+              AppIconData(
+                path:
+                    countriesController.connection.value.connectedCountry.flag,
+              ),
+            ),
           ),
           SizedBox(width: AppSize.width(width: 8)),
           Expanded(
@@ -90,7 +103,11 @@ class ConnectedCountryStatusArea extends StatelessWidget {
                       minFontSize: 10,
                       maxFontSize: 14,
                       maxLines: 1,
-                      "Netherlands",
+                      countriesController
+                          .connection
+                          .value
+                          .connectedCountry
+                          .name,
                       style: textStyle.cardTitleTextStyle,
                     ),
                   ),
@@ -103,7 +120,11 @@ class ConnectedCountryStatusArea extends StatelessWidget {
                       minFontSize: 10,
                       maxFontSize: 14,
                       maxLines: 1,
-                      "Amsterdam",
+                      countriesController
+                          .connection
+                          .value
+                          .connectedCountry
+                          .city,
                       style: textStyle.cardSubtitleTextStyle,
                     ),
                   ),
@@ -139,7 +160,7 @@ class ConnectedCountryStatusArea extends StatelessWidget {
                       minFontSize: 9,
                       maxFontSize: 13,
                       maxLines: 1,
-                      "14%",
+                      "${countriesController.connection.value.connectedCountry.strength}%",
                       style: textStyle.stealthValueTextStyle,
                     ),
                   ),
@@ -178,9 +199,7 @@ class ConnectedCountryStatusArea extends StatelessWidget {
               color: color.withOpacity(0.15),
             ),
             padding: EdgeInsets.all(AppSize.radius(radius: 4)),
-            child: AppIcon.icon(
-              icon,
-            ),
+            child: AppIcon.icon(icon),
           ),
           SizedBox(width: AppSize.width(width: 8)),
           Expanded(

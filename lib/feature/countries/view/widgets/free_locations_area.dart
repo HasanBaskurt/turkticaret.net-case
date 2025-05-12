@@ -2,10 +2,12 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:turkticaret_net_case/core/constants/app_colors.dart';
-import 'package:turkticaret_net_case/core/constants/app_icons.dart';
 import 'package:turkticaret_net_case/core/constants/app_locale_keys.dart';
 import 'package:turkticaret_net_case/core/constants/app_size.dart';
 import 'package:turkticaret_net_case/feature/countries/view/helper/countries_text_styles.dart';
+import 'package:turkticaret_net_case/global/mock_data/mock_countries.dart';
+import 'package:turkticaret_net_case/global/models/app_icon_data.dart';
+import 'package:turkticaret_net_case/global/models/country_model.dart';
 import 'package:turkticaret_net_case/utils/helper/app_icon.dart';
 
 class FreeLocationsArea extends StatelessWidget {
@@ -43,9 +45,9 @@ class FreeLocationsArea extends StatelessWidget {
         ),
         Expanded(
           child: ListView.builder(
-            itemCount: 4,
+            itemCount: MockCountries.countries.length,
             itemBuilder: (context, index) {
-              return _listCard();
+              return _listCard(country: MockCountries.countries[index]);
             },
           ),
         ),
@@ -53,7 +55,7 @@ class FreeLocationsArea extends StatelessWidget {
     );
   }
 
-  Container _listCard() {
+  Container _listCard({required CountryModel country}) {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(AppSize.radius(radius: 12)),
@@ -73,7 +75,7 @@ class FreeLocationsArea extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(AppSize.radius(radius: 6.9)),
             ),
-            child: AppIcon.icon(AppIcons.NETHERLANDS_FLAG),
+            child: AppIcon.icon(AppIconData(path: country.flag)),
           ),
           SizedBox(width: AppSize.width(width: 8)),
           Expanded(
@@ -89,7 +91,7 @@ class FreeLocationsArea extends StatelessWidget {
                       minFontSize: 10,
                       maxFontSize: 14,
                       maxLines: 1,
-                      "Turkey",
+                      country.name,
                       style: textStyle.cardTitleTextStyle,
                     ),
                   ),
@@ -102,7 +104,7 @@ class FreeLocationsArea extends StatelessWidget {
                       minFontSize: 10,
                       maxFontSize: 14,
                       maxLines: 1,
-                      "4 ${AppLocaleKeys.LOCATIONS.tr}",
+                      "${country.locationCount} ${AppLocaleKeys.LOCATIONS.tr}",
                       style: textStyle.cardSubtitleTextStyle,
                     ),
                   ),
